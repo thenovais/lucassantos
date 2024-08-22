@@ -1,0 +1,9 @@
+.button [igual] {
+display: block;
+width: 20%;
+padding: 10px 15px;
+background-color: black;
+color:aliceblue;
+border-radius: 5px;
+margin: 5px 0;
+}

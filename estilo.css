@@ -1,0 +1,445 @@
+/* ESTILO DA PAGINA por completo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: white;
+    height: 100vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*tamanho do robo*/
+.robo{
+    width: 68px;
+    height: auto;
+}
+
+/*Estilização da primeira pág. do site*/
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+
+/* Estilo do botão no cabeçalho*/
+.btn-contato button{
+    padding: 10px 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(95, 91, 212);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color:rgb(94, 85, 85);
+    text-decoration: none;
+    display: inline-block;
+}
+header a:hover{
+    color: rgb(58, 53, 184);
+    transform: scale(1.07);
+    transition: .6s;
+}
+
+/* Estilo dos tópicos no topo do site */
+.menu {
+    position: fixed;
+    background-color:white;
+    top: 0;
+    padding: 2%;
+    right: 80%;
+    left: 0%;
+    width: 100%;
+    z-index: 1000;
+    margin-bottom: 300px ;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+header nav ul{
+    list-style-type: none;
+    margin-left: 20%;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 22px;
+}
+
+/* Estilo do botão contato com ação do mouse*/
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px rgb(136, 100, 172);
+    transition: 1s;
+    transform: scale(1);
+    color: white;
+    font-size: 22px;
+}
+
+/* Estilo do topo, primeira pag */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+section.topo-do-site .flex{
+  margin-top: 5%;
+  padding: 40px;
+  justify-content: center;
+  gap: 90px;
+}
+
+/* Estilo do texto na primeira pag */
+.txt-topo-site >h1{
+    color: black;
+    font-size: 40px;
+    margin: 29px 0;
+}
+.txt-topo-site >p{
+    color:rgb(58, 53, 184);
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Estilo no ponto final do título */
+.txt-topo-site h1 span{
+    color: rgb(80, 80, 195);
+}
+
+/* Estilização da imagem do robo */
+section .img-topo{
+    margin-top: -100px;
+    height: auto;
+    width: auto;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* Comando para flutuação da imagem */
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+
+/* Estilização da pag. SOBRE MIM */
+.sobre-mim{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilização do texto */
+.sobre-mim .texto-sobre > h1{
+    color: black;
+    font-size: 40px;
+    margin-bottom: 5%;
+    margin-top: 20%;
+}
+.sobre-mim .texto-sobre > p{
+    text-indent: 20px;
+    color:rgb(58, 53, 184);
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: justify;
+    margin-right: 15%;
+}
+
+/* Estilização da imagem autoral (Futebol) */
+.imagem-sobre {
+    width: 150%;
+    height: auto;
+    margin-left: 12%;
+    margin-right: 10%;
+    margin-top: -46%;
+}
+.imagem-sobre img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Estilização do vídeo */
+.sobre-mim .video{
+    margin-right: 5%;
+    margin-left:-520px;
+    margin-top: 7%;
+}
+video{
+    border-radius: 12%;
+}
+
+/* Estilização da segunda imagem autoral (TST) */
+.imagem-sobre2 {
+    width: 150%;
+    height: auto;
+    margin-left: -480px;
+    margin-right: 10%;
+    margin-top: 66%;
+    padding: 10px;
+}
+.imagem-sobre2 img{
+    width: 320px;
+    height: 360px;
+    border-radius: 12%;
+}
+
+
+/* Estilização da terceira pag. FORMAÇÃO*/
+.formacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo do texto da pag */
+.formacao .texto-formacao > h1{
+    color: black;
+    font-size: 40px;
+    margin-top:20%;
+    text-align: center;
+    margin-bottom: 7%;
+}
+.formacao .texto-formacao > p{
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+    text-align: center;
+    padding: 15px;
+    margin: 3%;
+    background-color: rgb(84, 80, 194);
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight:bold;
+    color: white;
+}
+
+/* Estilização da imagem da pag */
+.formacao .img-formacao{
+    margin: 100px;
+    margin-top: 20%;
+    width: auto;
+    height: auto;
+}
+
+
+/* Estilização da quarta pag. PORTIFÓLIO*/
+section .portifolio{
+    background-color: orange;
+    width: 100%;
+    height: auto;
+    margin-top: 30%;
+    margin-bottom: -18%;
+}
+
+/* Estilização do texto da pag */
+section .portifolio .portifolio-txt > h1{
+    font-size: 44px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 3%;
+    margin-top: 5%;
+}
+section .portifolio .portifolio-txt > p{
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    padding: 1%;
+}
+
+/* Estilo do corpo dos projetos, textos, tamanhos e bordas */
+section .portifolio .portifolio-txt .projetos{
+    color: white;
+    text-align: start;
+    padding: 3%;
+    border: 6px solid;
+    border-radius: 20px;
+    margin: 2%;
+}
+section .portifolio .portifolio-txt .projetos > h1{
+    font-size: 28px;
+    margin-bottom: 2%;
+}
+
+/* Estilo do Projeto 1 */
+section .portifolio .portifolio-txt .projetos .projeto1> h4{
+    font-size: 20px;
+    margin-top: 4%;
+}
+section .portifolio .portifolio-txt .projetos .projeto1 > p{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: -3%;
+    margin-bottom: 4%;
+}
+section .portifolio .portifolio-txt .projeto1{
+    width: 24%;
+    height: 20%;
+    border: 6px solid;
+    border-color: purple;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(84, 80, 194);
+    margin-bottom: 5%;
+}
+
+/* Estilo da imagem do projeto 1 */
+section .portifolio .portifolio-txt .projeto1 .imagem1{
+    width: 100%;
+    height: auto;
+    border-radius: 0px, 20px, 0px, 20px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+/* Estilo do Projeto 2*/
+section .portifolio .portifolio-txt .projeto2{
+    width: 70%;
+    height: auto;
+    margin-right: 0%;
+    margin-left: 30%;
+    margin-top: -730px;
+    background-color: red;
+    text-align: center;
+    border: 6px solid;
+    border-radius: 20px;
+    border-color: rgb(106, 4, 4);
+}
+section .portifolio .portifolio-txt .projetos .projeto2> h4{
+    font-size: 20px;
+    margin-top: 1%;
+}
+section .portifolio .portifolio-txt .projetos .projeto2 > p{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 1%;
+}
+
+/*Estilo da imagem do Projeto 2 */
+section .portifolio .portifolio-txt .projeto2 .imagem2 {
+    width: 100%;
+    height: 550px;
+    margin-top: 2%;
+    margin-left: 0%;
+    margin-bottom: 1%;
+}
+
+
+/* Estilo do projeto 3 */
+section .portifolio .portifolio-txt .projeto3{
+    width: 90%;
+    height: 70%;
+    align-items: center;
+    background-color: rgb(238, 106, 172);
+    margin-top: 2%;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 6px solid;
+    border-radius: 20px;
+    border-color: rgb(180, 16, 79);
+}
+section .portifolio .portifolio-txt .projetos .projeto3 > h4{
+    font-size: 20px;
+    margin-top: 1%;
+}
+section .portifolio .portifolio-txt .projetos .projeto3 > p{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 1%;
+}
+
+/* Estilo da imagem do Projeto 3 */
+section .portifolio .portifolio-txt .projeto3 .imagem3 {
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+}
+
+
+
+/* Estilo da quinta e última pag. CONTATO*/
+section .contato{
+    background-color: rgb(84, 80, 194);
+    width: 100%;
+    height: 110%;
+    margin-top: 18%;
+}
+
+/* Corpo onde será inserido os conteúdos */
+.contato .contato-txt{
+    width: 40%;
+    height:auto;
+    border-radius: 25px;
+    background-color: white;
+    margin-top: 10%;
+    text-align: center;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-bottom: 6%;
+}
+.contato .contato-txt > h1{
+    font-size:40px;
+    color: black;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Configuração das logos das redes sociais */
+.contato .contato-txt .imagens img{
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-top: 10%;
+    width: 12%;
+    height: auto;
+    margin-top: 3%;
+    display: flex;
+}
+
+/* Estilização do botão com as redes sociais */
+.contato .contato-txt .imagens .button{
+    display: inline-block;
+    padding: 3%;
+    margin: 2%;
+    margin-bottom: 12%;
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    margin-right: 40%;
+    background-color: white;
+    border-radius: 20px;
+    color: rgb(84, 80, 194);
+    font-weight: bolder;
+    font-size: 22px;
+    cursor: pointer;
+    border: 2px solid rgb(84, 80, 194);
+    border-color:rgb(84, 80, 194);
+}
+
+/* Ação com o mouse ao passar pelas redes sociais */
+.contato .contato-txt .imagens .button:hover{
+    background-color: rgb(148, 145, 228);
+    border-color:rgb(148, 145, 228);
+    color: white;
+}
